@@ -1,0 +1,186 @@
+##HTML##
+
+<!DOCTYPE html>
+<html>
+  <nav id="navbar">
+    <header id="header"> ClemWorld Education </header>
+    
+    <ul>
+      
+      <li><a class="nav-link" href="#Crabs">Crabs</a></li>
+      <li><a class="nav-link" href="#Snails">Snails</a></li>
+      <li><a class="nav-link" href="#Sharks">Sharks</a></li>
+      <li><a class="nav-link" href="#Cuttlefish">Cuttlefish</a></li>
+      <li><a class="nav-link" href="#Lobster">Lobster</a></li>
+      
+    </ul>
+  </nav>
+  
+  <main id="main-doc">
+    <section class="main-section" id="Crabs">
+      <header>Crabs</header>
+      
+      <p>
+        <code> "Crabs Rule!" </code>
+      </p>
+      
+      <p>
+        <ul>
+          <li> Crab Insights Gathered Through Academic Study: </li>
+          
+            <ul>
+              <li> They will never cut you off in traffic </li>
+              <li> Or will they? </li>
+              <li> They are adept salespersons </li>
+              <li> Be wary of great deals </li>
+          </ul>
+          </p>
+      <br>
+      
+    <section class="main-section" id="Snails">
+      <header>Snails</header>
+      <p>
+        <code> "Snails aren't the best!" </code>
+      </p>
+      
+      <p>
+        <ul>
+          <li> Snail Insights Gathered Through Academic Study: </li>
+          
+            <ul>
+              <li> They will definitely cut you off in traffic </li>
+              <li> I can prove it </li>
+              <li> They are not adept salespersons </li>
+              <li> Be wary of awful deals </li>
+          </ul>
+          </p>
+      <br>
+      
+   <section class="main-section" id="Sharks">
+       <header>Sharks</header>
+     
+       <p>
+        <code> "Sharks are scary!" </code>
+      </p>
+      
+      <p>
+        <ul>
+          <li> Shark Insights Gathered Through Academic Study: </li>
+          
+            <ul>
+              <li> Traffic obeys their beck and call </li>
+              <li> They have very sharp teeth </li>
+              <li> They are also pretty good at selling stuff </li>
+              <li> Be wary of sharp teeth </li>
+          </ul>
+          </p>
+      <br>
+     <section class="main-section" id="Cuttlefish">
+       <header>Cuttlefish</header>
+       <p>
+        <code> "Cuttlefish cretins!" </code>
+      </p>
+      
+      <p>
+        <ul>
+          <li> Cuttlefish Insights Gathered Through Academic Study: </li>
+          
+            <ul>
+              <li> Color changing death machines </li>
+              <li> Seriously, those colors are NUTS </li>
+              <li> They hypnotize crabs and then eat them like savages </li>
+              <li> Be wary of pretty colors </li>
+          </ul>
+          </p>
+      <br>
+      <section class="main-section" id="Lobster">
+        <header>Lobster</header>
+        <p>
+        <code> "Lobsters are boring!" </code>
+      </p>
+      
+      <p>
+        <ul>
+          <li> Lobster Insights Gathered Through Academic Study: </li>
+          
+            <ul>
+              <li> Not nearly as aesthetically pleasing as a crab </li>
+              <li> Slow </li>
+              <li> Dumb </li>
+              <li> Be wary of losing IQ </li>
+          </ul>
+          </p>
+      <br>
+      
+       
+    
+  </main>
+</html>
+
+##CSS##
+#navbar {
+  position:fixed;
+  height:100%;
+  min-width:300px;
+  width:300px;
+  
+  top:0px;
+  left:0px;
+  
+  color:black;
+  background-color:white;
+  padding: 75px 0px;
+}
+
+@media only screen and (max-width: 800px)
+{
+  /* For mobile phones: */
+  #logo {
+    position: absolute;
+    height:auto;
+    min-width:300px;
+    width:300px;
+    
+    top:10px;
+    left: 0px;
+    
+    z-index:2;
+  }
+  
+  #navbar {
+    position:absolute;
+    max-height:300px;
+    max-width:300px;
+    width:300px;
+    
+    top:0px;
+    left:0px;
+    
+    color:black;
+    background-color:white;
+    padding: 75px 0px;
+    
+    z-index:1;
+  }
+  
+  
+  .header_text {
+    display:grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-gap: 50px;
+    grid-auto-rows: minmax(100px, auto);
+    
+    width: 100%;
+    height:auto;
+    
+    position:absolute;
+    top:18vw;
+    left:300px;
+    z-index:2;
+  }
+  #main-doc {
+    position:relative;
+    margin-left:0px;
+    margin-top: 300px;
+  }
+}
